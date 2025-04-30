@@ -7,4 +7,4 @@ if st.button("Generate Recipes!"):
     recipe_setup()
     email(email_list)
     print("Mail has been sent")
-    #st.write(email_string)
+    #st.write(email_string)##
