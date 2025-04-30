@@ -156,6 +156,40 @@ dankaroni = Recipe(
     ]
 )
 
+sweet_pot_fries = Recipe(
+    "Fajita Sweet Potato Fries",
+    [
+        "frozen sweet potato fries",
+        "ground beef",
+        "shredded cheese",
+        "tomatoes",
+        "onion/pepper mix",
+        "sour cream"
+    ]
+)
+
+fajita_burritos = Recipe(
+    "Fajita Burritos",
+    [
+        "large tortillas",
+        "ground beef",
+        "shredded cheese",
+        "tomatoes",
+        "onion/pepper mix",
+        "sour cream"
+    ]
+)
+
+grilled_cheese = Recipe(
+    "Sourdough Grilled Cheese w/ Soup",
+    [
+        "sourdough bread",
+        "sliced cheddar or meunster",
+        "sliced turkey",
+        "can of soup"
+    ]
+)
+
 
 # Compile the list of all recipes
 recipe_book = [beef_and_onion, 
@@ -168,7 +202,10 @@ recipe_book = [beef_and_onion,
                caprese_chicken,
                fryer_chicken_parm,
                greek_salad,
-               dankaroni
+               dankaroni,
+               sweet_pot_fries,
+               fajita_burritos,
+               grilled_cheese
             
                ]
 
@@ -176,6 +213,9 @@ recipe_book = [beef_and_onion,
 quick_recipes = [pesto_sausage_pasta,
                  greek_salad,
                  dankaroni,
-                 stroganoff_soup
+                 stroganoff_soup,
+                 sweet_pot_fries,
+                 fajita_burritos,
+                 grilled_cheese
 
                  ]

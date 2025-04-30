@@ -3,12 +3,11 @@ from main import email_list, email, recipe_setup
 
 global quick_options_only
 global meal_num
-meal_num = 3
 
 st.title("GoobGrub Weekly Recipes")
 
-# Let the user choose how many meals to generate (between 1 and 4)
-meal_num = st.number_input("How many meals do you want?", min_value=1, max_value=4, value=3)
+# Let the user choose how many meals to generate (between 1 and 7)
+meal_num = st.number_input("How many meals do you want?", min_value=1, max_value=7, value=3)
 
 if st.button("Generate from All Recipes!"):
     quick_options_only = False
