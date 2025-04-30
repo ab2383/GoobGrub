@@ -5,7 +5,7 @@ global quick_options_only
 global meal_num
 global recipe_string
 
-st.title("AH! The Weekly Recipes")
+st.title("GoobGrub")
 
 # Let the user choose how many meals to generate (between 1 and 7)
 meal_num = st.number_input("How many meals do you want?", min_value=1, max_value=7, value=3)
