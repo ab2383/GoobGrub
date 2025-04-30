@@ -2,17 +2,23 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 from recipes import recipe_book, quick_recipes
-from app import meal_num, quick_options_only
 import random
 import copy
 
 
+#######################################################
+####### Choose the options for meals this week #######
 
+#meal_num = 3
+#quick_options_only = False
 
-def recipe_setup():
+#######################################################
+#######################################################
+
+def recipe_setup(quick_flag, meal_count):
     global email_string
     # Populate the recipe book copy
-    if(quick_options_only):
+    if(quick_flag):
         book_copy = copy.deepcopy(quick_recipes)
     else:
         book_copy = copy.deepcopy(recipe_book)
@@ -22,7 +28,7 @@ def recipe_setup():
     # Declare a new list to hold the recipes for the week
     weekly_recipes = []
 
-    for i in range(meal_num):
+    for i in range(meal_count):
         weekly_recipes.append(book_copy.pop())
 
     email_string = ""
