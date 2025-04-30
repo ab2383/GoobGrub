@@ -2,17 +2,11 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 from recipes import recipe_book, quick_recipes
+from app import meal_num, quick_options_only
 import random
 import copy
 
-#######################################################
-####### Choose the options for meals this week #######
 
-meal_num = 3
-quick_options_only = False
-
-#######################################################
-#######################################################
 
 
 def recipe_setup():
