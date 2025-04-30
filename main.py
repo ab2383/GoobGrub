@@ -5,16 +5,6 @@ from recipes import recipe_book, quick_recipes
 import random
 import copy
 
-
-#######################################################
-####### Choose the options for meals this week #######
-
-#meal_num = 3
-#quick_options_only = False
-
-#######################################################
-#######################################################
-
 def recipe_setup(quick_flag, meal_count):
     global email_string
     # Populate the recipe book copy
@@ -40,6 +30,8 @@ def recipe_setup(quick_flag, meal_count):
             email_string = email_string + ingredient + "\n"
         email_string = email_string + "_________________________________________\n\n"
 
+def yield_string():
+    return email_string
 
 # Function to send the desired email
 def email(toMails):
